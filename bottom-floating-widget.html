@@ -1,0 +1,51 @@
+<style>
+
+img,a{border:0;}
+#on{visibility:visible;}
+#off{visibility:hidden;}
+#facebook_div{width:196px;height:353px;overflow:hidden;}
+#twitter_div{width:246px;height:353px;overflow:hidden;}
+#google_plus_div{width:152px;height:97px;overflow:hidden;margin-left:50px;margin-top:10px;}
+#knfeedburner_div{width:300px;height:97px;margin-top:25px;overflow:hidden;}
+#kakinetwork_div{width:300px;height:97px;overflow:hidden;}
+
+#twitter_right{z-index:10004;border:0px solid #6CC5FF;background-color:#fff;width:246px;height:353px;position:fixed;left:20%;}
+#twitter_right_img{position:absolute;top:-32px;;border:0; left:20px;}
+
+#kakinetwork_right{z-index:10003;border:0px solid #303030;background-color:#fff;width:300px;height:97px;position:fixed;}
+#kakinetwork_right img{position:absolute;top:-2px;left:-101px;}/* left side style */
+#facebook_left{z-index:10005;border:2px solid #3c95d9;background-color:#fff;width:196px;height:353px;position:fixed;left:-200px;}
+#facebook_left img{position:absolute;top:-2px;right:-35px;}
+#facebook_left iframe{border:0px solid #3c95d9;overflow:hidden;position:static;height:360px;right:-2px;top:-3px;}
+#twitter_left{z-index:10004;border:2px solid #6CC5FF;background-color:#6CC5FF;width:246px;height:353px;position:fixed;left:-250px; bottom:100px;}
+#twitter_left_img{position:absolute;top:-2px;right:-35px;border:0;}
+#kakinetwork_left{z-index:10003;border:2px solid #303030;background-color:#fff;width:300px;height:97px;position:fixed;}
+#kakinetwork_left img{position:absolute;top:-2px;right:-101px;}
+
+</style>
+<script type="text/javascript">jQuery(document).ready(function() {
+        jQuery("#facebook_right").hover(function() {
+            jQuery(this).stop(true, false).animate({right: 0}, 500);
+        }, function() {
+            jQuery("#facebook_right").stop(true, false).animate({right: -200}, 500);
+        });
+        jQuery("#twitter_right").hover(function() {
+            jQuery(this).stop(true, false).animate({bottom: 0}, 500);
+        }, function() {
+            jQuery("#twitter_right").stop(true, false).animate({bottom: -353}, 500);
+        });
+        jQuery("#google_plus_right").hover(function() {
+            jQuery(this).stop(true, false).animate({right: 0}, 500);
+        }, function() {
+            jQuery("#google_plus_right").stop(true, false).animate({right: -154}, 500);
+        });
+        jQuery("#feedburner_right").hover(function() {
+            jQuery(this).stop(true, false).animate({right: 0}, 500);
+        }, function() {
+            jQuery("#feedburner_right").stop(true, false).animate({right: -303}, 500);
+        });
+    });</script>
+
+<div id="on"><div id="twitter_right" style="bottom:-353px;"><div id="twitter_div"><img id="twitter_right_img" src="twitter-icon.png" /><a class="twitter-timeline" href="https://twitter.com/username" data-widget-id="widget-id">Tweets di @username</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div></div></div>
